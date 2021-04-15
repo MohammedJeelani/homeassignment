@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+* {
+  margin: 5;
+  margin-bottom: 15px;
+  padding: 5px;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-input {
+  width:950px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  
+  
+
+  
+}
+.todo-description {
+  width:950px;
+  
+  margin-bottom: 50px;
+  border-radius: 5px;
+
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.todo-date{
+  width:500px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+.input-label{
+  color:black;
+  font-size: 30px;
+}
+
+.todo-button{
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 40px;
+}
+
+.select .filter-todo{
+  width:500px;
+  color: red ;
+  font-family: cursive;
+}
+
+.select label {
+color: black;
+}
+
+.complete-btn, .trash-btn{
+  width:70px;
+  height: 35px;
+}
+.main {
+  margin-left: 20%;
+  
+}
+
+h1{
+  margin-left: 35%;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  text-decoration: underline dotted;
+  
+   
+}
+
+
+.trash-btn {
+  background: #ff6f47;
+  color: white;
+  height: 50px;
+  width:100px;
+  border: none;
+  margin-left: 20px;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: #ff6f47;
+  color: white;
+  height: 50px;
+  width:100px;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.todo {
+  margin: 0px;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+justify-content: space-evenly;
+  align-items: center;
+  transition: all 1s ease;
+  
+} 
+form{
+  border-bottom  :black solid 5px;
+  border-left   :black solid 5px;
 }
